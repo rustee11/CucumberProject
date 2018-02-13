@@ -111,6 +111,11 @@ public String getText(WebElement ele) {
 }
 
 
+public String getAttributeValue(WebElement ele) {
+	String str = ele.getAttribute("value");
+	return str;
+}
+
 public void Await(WebElement ele,int sec) {
 	
 	WebDriverWait wait = new WebDriverWait(driver,sec);

@@ -1,6 +1,7 @@
 package org.stepdefinition;
 
 import org.base.Base;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -35,6 +36,17 @@ public class StepDef {
 		b.closeApp(b.driver);
 	}
 	
+	@Then("^verify and Logout the browser$")
+	public void verify_and_Logout_the_browser() throws Exception {
+		Base b = new Base();
+		WebElement firstname = b.driver.findElement(By.name("firstname"));
+		WebElement lastname = b.driver.findElement(By.name("lastname"));
+		Assert.assertEquals("vinoth", b.getAttributeValue(firstname));
+		Assert.assertEquals("rustee", b.getAttributeValue(lastname));
+		b.closeApp(b.driver);
+
+	}
+
 	
 	
 	

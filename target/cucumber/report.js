@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9510594419,
+              "duration": 11916904053,
               "status": "passed"
             },
             "line": 4,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 801115296,
+              "duration": 759785523,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 2089564145,
+              "duration": 157663018,
               "status": "passed"
             },
             "line": 6,
@@ -69,7 +69,7 @@
         "steps": [
           {
             "result": {
-              "duration": 10790107714,
+              "duration": 9665849258,
               "status": "passed"
             },
             "line": 4,
@@ -81,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 702831502,
+              "duration": 886616179,
               "status": "passed"
             },
             "line": 5,
@@ -93,13 +93,13 @@
           },
           {
             "result": {
-              "duration": 2112054350,
+              "duration": 2158636612,
               "status": "passed"
             },
             "line": 6,
-            "name": "Logout the browser",
+            "name": "verify and Logout the browser",
             "match": {
-              "location": "StepDef.logout()"
+              "location": "StepDef.verify_and_Logout_the_browser()"
             },
             "keyword": "Then "
           }

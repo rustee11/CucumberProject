@@ -1,6 +1,12 @@
+@tag
 Feature: Login Action
- 
-Scenario: Successful Login with Valid Credentials
+  
+ @tag1
+Scenario Outline: Successful Login with Valid Credentials
 	Given User is on Home Page
-	When Enter_Firstname and Lastname
-	Then verify and Logout the browser	
+	When Enter "<fname>" and "<lname>"
+	Then verify the entered "<fname>" and"<lname>"	
+	
+Examples:
+|fname|lname|
+|vinoth|rusty|	
